@@ -1,0 +1,53 @@
+{
+  "name": "kokuban-saiban",
+  "version": "0.0.1",
+  "description": "A small online judge project",
+  "author": "William Darian <williamdariansutedjo@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "common",
+    "server",
+    "web"
+  ],
+  "scripts": {
+    "commit": "cz"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.2.1",
+    "@types/eslint-plugin-prettier": "^3.1.0",
+    "@types/prettier": "^2.4.2",
+    "@typescript-eslint/eslint-plugin": "^5.5.0",
+    "@typescript-eslint/parser": "^5.5.0",
+    "bundlesize": "^0.18.1",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.4.0",
+    "eslint-config-next": "^12.0.7",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-typescript": "^2.5.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-sort-destructure-keys": "^1.4.0",
+    "eslint-plugin-sort-keys-fix": "^1.1.2",
+    "eslint-plugin-typescript-sort-keys": "^2.1.0",
+    "husky": "^7.0.4",
+    "patch-package": "^6.4.7",
+    "postinstall-postinstall": "^2.1.0",
+    "prettier": "^2.5.1",
+    "prettier-eslint": "^13.0.0",
+    "prettier-eslint-cli": "^5.0.1",
+    "typescript": "^4.5.2"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,html}": [
+      "prettier-eslint --write"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
